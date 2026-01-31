@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Pastel Light Theme */
+  --background: 340 50% 97%;      /* Soft Pink/Cream base */
+  --foreground: 222 47% 11%;      /* Dark text for contrast */
+  
+  --primary: 340 60% 65%;         /* Dusty Rose */
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 210 60% 90%;       /* Soft Blue */
+  --secondary-foreground: 222 47% 11%;
+  
+  --accent: 262 60% 85%;          /* Lavender */
+  --accent-foreground: 222 47% 11%;
+  
+  --muted: 340 20% 95%;
+  --muted-foreground: 340 10% 40%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  
+  --border: 340 20% 90%;
+  --input: 340 20% 90%;
+  --ring: 340 60% 65%;
+
+  --font-sans: 'Outfit', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+.dark {
+  /* Rich Dark Theme with Pastel Accents */
+  --background: 240 10% 10%;      /* Deep Charcoal/Black */
+  --foreground: 340 20% 95%;      /* Off-white text */
+  
+  --primary: 340 50% 60%;         /* Muted Rose */
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 210 30% 20%;       /* Dark Slate Blue */
+  --secondary-foreground: 210 60% 90%;
+  
+  --accent: 262 40% 30%;          /* Deep Purple */
+  --accent-foreground: 262 60% 90%;
+  
+  --muted: 240 10% 15%;
+  --muted-foreground: 240 10% 60%;
+  
+  --card: 240 10% 12%;
+  --card-foreground: 340 20% 95%;
+  
+  --border: 240 10% 20%;
+  --input: 240 10% 20%;
+  --ring: 340 50% 60%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/50 dark:bg-black/50 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-lg;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-blue-400;
+  }
+}

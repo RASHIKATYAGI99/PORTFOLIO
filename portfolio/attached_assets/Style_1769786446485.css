@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fceaea;
+    color: #555555;
+}
+
+/* Header & Navigation */
+.header {
+    background: #666666;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    margin-right: 10px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding-top: 80px;
+    background: white;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home-content span {
+    
+     color: #ff5733; 
+}
+
+.home-img img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/* Sections Styling */
+section {
+    
+    padding: 50px;
+    text-align: center;
+} 
+.home h1 {
+    margin: 50px 0;
+}
+
+h2 {
+    
+    font-size: 28px;
+    margin-bottom: 20px;
+     
+}
+.about {
+    
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+    border-radius: 5px;
+}
+.about .about{
+    background: white;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+    border-radius: 5px;
+
+}
+
+.about h2{
+    border: #1f1f1f;
+}
+/* Skills */
+.skills ul {
+    list-style: none; 
+    background: white;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.skills ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Projects */
+.projects .project {
+    background: white;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects .project h3 {
+    margin: 10px 0;
+}
+
+.projects .project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff5733;
+    text-decoration: none;
+}
+
+/* Resume */
+.resume iframe {
+    max-width: 100%;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
